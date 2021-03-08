@@ -5,5 +5,9 @@ IFS=$'\n'
 for var in $(cat $file)
 do
 a=$(( $a + 1 ))
-echo $a:  $var | awk '/\..+\.31\./' >> test.txt
+IFS=$','
+for var2 in $var
+do
+echo $a: $var2 | awk '/\..+\.31\./' >> test.txt
+done
 done
