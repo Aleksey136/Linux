@@ -1,0 +1,14 @@
+Package: skript
+Version: 1.0
+Provides: skript.sh
+Maintainer: Aleksey
+Architecture: all
+Section: base
+Description: Short.
+Depends: dpkg
+Pre-Depends: wget
+Conflicts: opencv
+Replaces: ut2004
+Recommends: superplatform
+Suggests: supersh-modules
+Build-Depends: cmake
